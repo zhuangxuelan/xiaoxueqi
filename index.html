@@ -5,28 +5,32 @@
 <title>浅谈梅山文化</title>
 <style type="text/css">
 #div1{
-	width: 100%;
-	height:750px;
-	background-image:url(images/小学期古风图/5.png);
+	margin:0 auto;
+	min─width:1000px;
+	position: relative;
+	width: 1000px;
+	height:700px;
+	background-image:url(images/5.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 .leftbar{
-	position: absolute;
-	left: 2px;
-	top: 1px;
-	width: 35%;
+	position: relative;
+	float: left;
+	left: 0px;
+	top: 0px;
+	width: 320px;
 	height: 100%;
 	color: #000;
  }
 .top{
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 50px;
 	color: #000;
 	}
 .introduction{
-	position: absolute;
+	position: relative;
 	top: 50px;
 	width: 100%;
 	height: 70%;
@@ -34,84 +38,87 @@
 	left: 1px;
 	}
 .rightbar{
-	position: absolute;
-	top: 1px;
-	right: 1px;
-	width: 65%;
-	height: 100%;
+	position: relative;
+	float: right;
+	top: 0px;
+	right: 0px;
+	width: 650px;
+	height: 700px;
 	color: #000;
 }
 .tips{
-	position: absolute;
+	position: relative;
 	top: 0px;
 	width: 100%;
 	height: 60%;
 	color: #000;
 	}
 .option{
-	position: absolute;
-	top: 60%;
+	position: relative;
+	top: 0px;
 	width: 100%;
 	height: 40%;
 	color: #000;
 	}
 .learn{
 	position: absolute;
+	float: left
 	top: 0px;
 	width: 50%;
 	height: 100%;
-	color: #000
+	color: #000;
 	}
 #d1{
-	position: absolute;
+	position: relative;
 	top: 0px;
 	width: 100%;
 	height: 20px;
 	color: #000
 	}
 #d2{
-	position: absolute;
-	top: 32px;
-	width: 297px;
-	height: 79px;
+	position:relative;
+	top: 35px;
+	width: 282px;
+	height: 88px;
 	color: #000;
-	left: 3px;
+	left: 0;
 	}
 #d3{
-	position: absolute;
+	position: relative;
 	top: 60px;
 	width: 100%;
 	height: 20px;
 	color: #000
 	}
 #d11{
-	position: absolute;
+	position: relative;
 	top: 0px;
 	width: 100%;
 	height: 20px;
 	color: #000
 	}
 #d21{
-	position: absolute;
-	top: 32px;
+	position:relative;
+	top: 35px;
 	width: 282px;
 	height: 88px;
 	color: #000;
-	left: 303px;
+	right: 0;
 	}
 #d31{
-	position: absolute;
+	position: relative;
 	top: 102px;
 	width: 100%;
 	height: 20px;
 	color: #000
 	}
 .exercise{
-	position: absolute;
+	position:absolute;
+	float: right;
 	top: 0px;
-	right: 50%;
-	width: 50%;
-	height: 100%;
+	right: 0px;
+	width:50%;
+	height:100%;
 	color: #000;
 	}
 #ul1 {
@@ -119,9 +126,14 @@
 	font-size: 24px;
 	text-align: left;
 	list-style-type:none;
-}
-
-</style>
+} 
+a{text-decoration: none;
+	color: #090707}
+.fd { font-size: 50px; }
+.fd:hover { font-size: 60px; 
+			color: #3E3737;}
+.fd:visited{color: #747474;}
+	</style>
 </head>
 
 
@@ -139,22 +151,21 @@
   </div>
 <div class="rightbar">
 	<div class="tips">
-	  <div class="option">
-	    <div class="learn">
-	      <div id="d2">
-	        <a href="whzl.html"><h1 style="text-align: center; color: #000000; font-family: '隶书';font-size: 50px;">文化之旅</h1></a>
-          </div>
-        </div>
-	    <div class="exercise">
-	      <div id="d21">
-	        <h1 style="text-align: center; color: #000000; font-family: '隶书';font-size: 50px;">探险之路</h1>
-          </div>
-        </div>
-      </div>
-		<h1 style="text-align: center; color: #000000; font-family: '隶书';font-size: 108px;"><strong>浅  </strong><strong>谈</strong></h1>
-    <h1 style="text-align: center; color: #000000; font-family: '隶书';font-size: 118px;"><strong>“梅山文化”</strong></h1>
+		<h1 style="text-align: center; color: #000000; font-family: '隶书';font-size: 96px;"><strong>浅  </strong><strong>谈</strong></h1>
+    <h1 style="text-align: center; color: #000000; font-family: '隶书';font-size: 106px;"><strong>“梅山文化”</strong></h1>
 	</div>
-</div>
+	<div class="option">
+		<div class="learn">
+		  <div id="d2">
+		      <h1 style="text-align: right; color: #000000; font-family: '隶书';"><a href="whzl.html" class="fd">文化之旅</a></h1>
+	        </div>
+			</div>
+		<div class="exercise">
+		  <div id="d21">
+		  <h1 style="text-align:center; color: #000000; font-family: '隶书';"><a href="txzl.html" class="fd">探险之路</a></h1></div>
+	  </div>
+	  </div>
+	</div>
 </div>
 </body>
 </html>
