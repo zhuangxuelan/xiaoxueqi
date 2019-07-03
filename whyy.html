@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<div>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>轻量级CSS3立体式3D旋转动画效果</title>
+    <style>
+	body{ background-color:#EFEFEF;}
+	.lanren{
+		width:980px;
+		height: 500px;
+		overflow:hidden;
+		margin:0 auto;
+		position: relative;
+		top: 0px;
+		}
+	.flip-3d { 
+	  perspective: 1200px; width: 33%; float: left;  
+	}
+	.flip-3d figure { 
+	  position: relative; 
+	  transform-style: preserve-3d; 
+	  transition: 1s transform;
+	  font-size: 1.6rem;
+	  margin:25px;
+	}
+	.flip-3d figure img { 
+	  width: 100%; height: auto; 
+	}
+	.flip-3d figure figcaption { 
+	  position: absolute; 
+	  width: 100%; height:300px; top: 0; 
+	  transform: rotateY(.5turn) translateZ(1px); 
+	  background: rgba(255,255,255,0.9); 
+	  text-align: center; 
+	  padding-top: 35%; 
+	  opacity: 0.6; 
+	  transition: 1s .5s opacity; 
+	}
+	.flip-3d:hover figure { transform: rotateY(.5turn); }
+	.flip-3d:hover figure figcaption { opacity: 1; }
+	.flip-3d figure:after { 
+	  content: " "; display: block;
+	  height: 8vw; width: 100%; 
+	  transform: rotateX(90deg); 
+	  background-image:radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); 
+	}
+	@media screen and (max-width: 800px) { 
+	  #flip-3d { perspective-origin: center top; }
+		div#flip-3d figure { 
+	    float: none; 
+	    width: 10%; 
+	    margin: 0 auto; 
+	    margin-bottom: 12vw; 
+	  }
+	 .flip-3d figure figcaption{font-size: 0.8rem;}
+		div#flip-3d figure:last-child { display: none; }
+	}
+
+	.wenzi {
+    font-family: 隶书;
+    font-size: 20px;
+	}
+	.wenzi2 {
+    font-family: 隶书;
+    font-size: 30px;
+	}
+	#d1 {
+	height: 600px;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image:url(images/5.png);
+	position: relative;
+}
+	#d2{
+		height: 100px;
+		width:980px;
+		
+		}
+
+    #d3 {
+    font-family:隶书;
+    font-size: 70px;
+	width: 500px;
+	float: left;
+	height: 100px;
+	padding-top: 20px;
+}
+.back{
+	    height: 100px;
+		width: 380px;
+		float: right;
+		}
+.previous{
+	height: 50px;
+	float: left;
+	padding-top: 30px;
+		}
+.index{
+	height: 50px;
+	float: right;
+	padding-top: 30px;
+	padding-right: 180px;
+		}
+a{ color: #090707; text-decoration: none;}
+.fd { font-size: 30px; }
+.fd:hover {color: #3E3737; font-size: 40px; }
+.fd:visited{ color: #747474;}
+    </style>
+    
+  </head>
+  <body>
+    <div id="d1">
+      <div id="d2">
+		<div id="d3">文化渊源</div>
+		<div class = "back">
+			<div class = "previous"><p class="wenzi2"><a href="yynh.html" class="fd">上一页</a></p></div>
+			<div class = "index"><p class="wenzi2"><a href="index.html" class="fd">主页</a></p></div>
+		</div>
+        </div>
+      <div class="lanren">
+        <div class="flip-3d">
+          <figure>
+            <img src="images/gnxc.JPG" >
+            <figcaption class="wenzi">1988年5月在武汉举行的"中国长江文化研究会"上，来自湖南冷水江市的童丛和新化县的周少尧二位学者首次提出了湘中地方自古以来存在的一种神秘古朴的民间原始文明文化形态，称之为"梅山文化"，这个概念当即得到大会的认可，此后逐步得到了学术界的承认。</figcaption>
+            </figure>
+          </div>
+        <div class="flip-3d">
+          <figure>
+            <img src="images/gyms.JPG">
+            <figcaption class="wenzi">梅鋗做为楚越大将在长江流域及以南影响至深，被封为"梅王"，梅鋗所封之地正是长江流域中游并以南等广大地域，是为古楚芈山所在，"芈"与"梅"音合，正可谓天缘成俗，这片土地便由"芈山"变成"梅山"了，后来这一带的历史当然就记为"梅山"的历史了…</figcaption>
+            </figure>
+          </div>
+        <div class="flip-3d">
+          <figure>
+            <img src="images/xyms.JPG" >
+            <figcaption class="wenzi">今天洞庭湖以南，南岭山脉以北、湘，沅二水之间成西南--东北走向的资水流域--雪峰山区域，土地面积近5万平方公里的狭小地域，这就是历史上"梅山"湘中狭义地域概念的由来，也有了历史上的开梅置县的强化管理…</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+  </body>
+  </html>
+</div>
