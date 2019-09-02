@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>概念知多少</title>
+<style type="text/css">
+#div1{
+	margin:0 auto;
+	min─width:980px;
+	position: relative;
+	width: 980px;
+	height:580px;
+	background-image:url("images/5.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.top{
+	width: 980px;
+	height: 110px;
+	position: relative;
+	top:0px;
+	left: 0px;
+	}
+.tips{
+	position: relative;
+	float: left;
+	top: 10px;
+	width: 549px;
+	height: 100px;
+	color: #000;
+	left: 0px;
+	}
+	}
+.music{
+	position: relative;
+	float: right;
+	top: 10px;
+	width: 140px;
+	height: 100px;
+	color: #000;
+	right: 20px;
+	}
+.back{
+	width: 350px;
+	height: 120px;
+	position: relative;
+	float: right;
+	top:330px;
+	right: 10px;	
+	}
+.previous{
+	position: absolute;
+	top: 0px;
+	width: 175px;
+	height: 100px;
+	color: #000;
+	left: 0px;
+	}
+.index{
+	position: absolute;
+	top: 0px;
+	right: 1px;
+	width: 175px;
+	height: 100px;
+	color: #000;
+	}
+.p1{
+	text-align: left;
+	font-family: '隶书';
+	font-size:50px;}
+.p2{
+	text-align: left;
+	font-family: '隶书';
+	font-size: 60px;
+}
+.p3{
+	text-align:center;
+	font-family: '隶书';
+	font-size:40px;}
+.p4{
+	text-align:center;
+	font-family: '隶书';
+	font-size:30px;}
+a{ color: #090707; text-decoration: none;}
+.fd { font-size: 40px; }
+.fd:hover {color: #3E3737; font-size: 50px; }
+.fd:visited{ color: #747474;}
+#tm{
+	position:absolute;
+	top:185px;
+	left:310px;
+	width:450px;
+	hight:450px;
+	background-color:white;
+	}
+#t12{
+	position:absolute;
+	left:590px;
+	top:370px;
+	}
+#tm{
+	position:absolute;
+	top:180px;
+	left:275px;
+	width:470px;
+	height:300px;
+	font-family:"隶书";
+	color:black;
+	font-weight:bold;}
+#tm h2{
+	font-size:24px;
+	}
+#tm ul{
+	font-size:21px;
+	}
+#tj{
+	background-color:#E4E4E4;
+	border:0;
+	font-family:"隶书";
+	color:#575757;
+	font-weight:bold;
+	height:30px;
+	width:65px;
+	font-size:21px;
+	border-radius:3px;
+	position:absolute;
+	left:200px;
+	top:230px;
+	}
+#an1{
+	position:absolute;
+	top:90px;
+	left:50px;
+}
+#an2{
+	position:absolute;
+	top:90px;
+	left:290px;
+}
+#an3{
+	position:absolute;
+	top:150px;
+	left:50px;
+}
+#an4{
+	position:absolute;
+	top:150px;
+	left:290px;
+}
+#cw1{
+	position:absolute;
+	top:80px;
+	left:150px;
+}
+#cw2{
+	position:absolute;
+	top:140px;
+	left:180px;
+}
+#cw3{
+	position:absolute;
+	top:140px;
+	left:415px;
+}
+#zq{
+	position:absolute;
+	top:80px;
+	left:370px;
+}
+#ts{
+	position:absolute;
+	top:190px;
+	left:110px;
+	font-size:21px;
+	color:#DD4A4C;
+}
+	</style>
+<script type="text/javascript">
+function myFunction()
+{
+	var abc=document.myform.answer.value;
+	if(abc=="answer1")
+	{
+		document.getElementById("cw1").style.display = "block";
+		document.getElementById("zq").style.display = "none";
+		document.getElementById("ts").style.display = "none";
+	}
+	else if(abc=="answer2")
+	{
+		document.getElementById("zq").style.display = "block";
+		document.getElementById("cw1").style.display = "none";
+		document.getElementById("ts").style.display = "none"; 
+	}
+	else
+	{
+		document.getElementById("ts").style.display = "block";
+		document.getElementById("zq").style.display = "none";
+		document.getElementById("cw1").style.display = "none";
+}
+}
+</script>
+</head>
+
+<body>
+<div id = "div1">
+  <div class = "top">
+		<div class = "tips">
+		  <p class="p2"><strong>判 断 题</strong></p></div>
+	  <div class = "music"><p class="p3">音乐</p></div>
+	</div>
+<div id="tm">
+<h2>7&nbsp;.&nbsp;“三”在古汉语中经常用来代指“多”。</h2>
+<form action="" method="post" name="myform" id="myform">
+<ul style="list-style:none;">
+<li id="an1"><input type="radio" value="answer1" name="answer" />错</li>
+<li id="an2"><input type="radio" value="answer2" name="answer" />对</li>
+</ul>
+<input type="button" value="查看" name="submit" onClick="myFunction()" id="tj" >
+
+<img src='images/no.png' width="60px" height="45px" id="cw1" style="display:none">
+<img src='images/yes.png' width="60px" height="50px" id="zq" style="display:none">
+<div id="ts" style="display:none">同学，你还没有做题哦！</div>
+</div>
+<div id = "t12"><p class="p3"><a href="test8.html" class="fd">下一题</a></p></div>
+  <div class = "back">
+		<div class = "previous"><p class="p3"><a href="test6.html" class="fd">上一题</a></p></div>
+		<div class = "index"><p class="p3"><a href="index.html" class="fd">主页</a></p></div>
+	</div>
+</div>
+</body>
+</html>
+

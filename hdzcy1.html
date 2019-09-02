@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>黄帝战蚩尤</title>
+	<style>
+		#main{
+			width: 500px;
+			height: 460px;
+			float: left;
+			position: relative;
+			left: 20px;
+		}
+		ul{
+			width: 450px;
+			height: 450px;
+			float: left;
+			margin: 5px;
+			padding: 0px;
+			list-style-type: none;
+			background-color: blanchedalmond;
+		}
+		li {
+			float: left;
+		}
+		#success {
+			font-family:隶书;
+			position: relative;
+			left: 40px;
+			top: 30px;
+			height: 80px;
+			width: 350px;
+			float: left;
+			display:none;
+			text-align: center;
+			font-size: 32px;
+		}
+#biaoti{    
+	font-family:隶书;
+    font-size: 80px;
+	width: 500px;
+	float: left;
+	height: 120px;
+	padding-top: 10px;
+		}
+	#dzong{
+	height: 590px;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image:url(images/5.png);
+	position: relative;
+		}
+	#neirong{
+		float: left;
+		height: 300px;
+		width: 400px;
+		font-family: 隶书;
+    	font-size: 20px;
+		}
+		
+.back{
+	    height: 120px;
+		width: 380px;
+		float: right;
+		}
+.previous{
+	height: 50px;
+	float: left;
+	padding-top: 10px;
+		}
+.index{
+	height: 50px;
+	float: right;
+	padding-top: 10px;
+	padding-right: 120px;
+		}
+a{ color: #090707; text-decoration: none;}
+.fd { font-size: 35px; }
+.fd:hover {color: #3E3737; font-size: 45px; }
+.fd:visited{ color: #747474;}
+.wenzi2 {
+    font-family: 隶书;
+    font-size: 30px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="dzong">
+		<div id="biaoti">黄帝战蚩尤</div>
+			<div class = "back">
+			<div class = "previous"><p class="wenzi2"><a href="txzl.html" class="fd">上一页</a></p></div>
+			<div class = "index"><p class="wenzi2"><a href="index.html" class="fd">主页</a></p></div>
+		</div>
+	<div id="dzuo"><p></p></div>
+	<div id="main">
+		<ul id="begin">
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_02.jpg" alt="" width="150px" height="150px" draggable="true" id="drag1" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_05.jpg" alt="" width="150px" height="150px" draggable="true" id="drag2" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_09.jpg" alt="" width="150px" height="150px" draggable="true" id="drag3" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_01.jpg" alt="" width="150px" height="150px" draggable="true" id="drag4" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_07.jpg" alt="" width="150px" height="150px" draggable="true" id="drag5" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_06.jpg" alt="" width="150px" height="150px" draggable="true" id="drag6" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_03.jpg" alt="" width="150px" height="150px" draggable="true" id="drag7" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_08.jpg" alt="" width="150px" height="150px" draggable="true" id="drag8" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/pic_source_04.jpg" alt="" width="150px" height="150px" draggable="true" id="drag9" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+		</ul>
+	</div>
+	
+	<div id="success">恭喜您 拼图成功！</div>
+	<div id="neirong">
+		<p>《山海经·大荒北经》：“有系昆之山者，有共工之台，射者不敢北向。有人衣青衣，名曰黄帝女魃。蚩尤作兵伐黄帝，黄帝乃令应龙攻之冀州之野。应龙畜水。蚩尤请风伯雨师，纵大风雨。黄帝乃下天女曰魃，雨止，遂杀蚩尤。魃不得复上，所居不雨。叔均言之帝，后置之赤水之北。叔均乃为田祖。魃时亡之，所欲逐之者，令曰：“神北行！”先除水道，决通沟渎。”</p>
+		<p style="font-size: 28px;">请你完成左边拼图</p>
+		</div>
+</div>
+	<script>
+		var start_index;
+		var end_index;
+		function dragStart(event) {
+			console.log("dragStart: " + event.target.id);
+			start_index = event.target.id;
+		}
+		function dragEnd(event) {
+			event.preventDefault();
+		}
+		function dropOver(event) {
+			event.preventDefault();
+		}
+		function drop(event) {
+			event.preventDefault();
+			console.log("drop: "+event.target.id);
+			end_index = event.target.id;
+			// 交换id1和id2两个元素的attri属性值
+			exchange(start_index, end_index, "src");
+			// 检查拼图是否已完成，若完成显示对应文本
+			check();
+		}
+		function exchange(id1, id2, attri){
+			ele1=document.getElementById(id1);
+			ele2=document.getElementById(id2);
+			var tmp_attri=ele1.getAttribute(attri);
+			ele1.setAttribute(attri,ele2.getAttribute(attri));
+			ele2.setAttribute(attri,tmp_attri);
+			// 添加代码：交换id1和id2两个元素的attri属性值
+		}
+		function check(){
+			var img_list=document.getElementsByTagName("img");
+			var img_src,dot_index,img_index;
+			for(var i=0;i<9;i++)
+			{
+				img_src=img_list[i].getAttribute("src");
+				dot_index=img_src.lastIndexOf(".");
+				img_index=Number(img_src.slice(dot_index-2,dot_index));
+				if(img_index!=i+1) return false;
+			}
+			var success=document.getElementById("success");
+			success.style.display="block"
+			// 添加代码：检查拼图是否已完成，若完成显示对应文本
+		}
+	</script>
+</body>
+</html>
