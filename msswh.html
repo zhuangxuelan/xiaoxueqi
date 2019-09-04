@@ -13,10 +13,10 @@
 	position: relative;
 }
 #d11 {
-	background-image:url("images/swhbt.jpg");
+	background-image:url("images/msswhbt.png");
 	background-size: auto 250px;
 	height: 220px;
-	width: 530px;
+	width: 500px;
 	background-color: #666;
 	position: relative;
 	left: 10px;
@@ -57,7 +57,7 @@
 	left: 100px;
 	top: 0px;
 	float:left;
-	
+	background-color: #FFFFFF;
 }
 #d23 {
 	float: right;
@@ -132,6 +132,13 @@ a{ color: #090707; text-decoration: none;}
     height: 100px;
     width: 980px;
 }
+	#d5{
+		height: 100px;
+		width: 180px;
+		float: left;
+		position: relative;
+		left: 100px;
+	}
 .shitou{
 		float: right;
 	}
@@ -174,7 +181,10 @@ function tip(ev){
 <body>
 <div id="dzong">
 <div id="d1">
-	<div id="d12">	<div id="yinyue1"><p id="yinyue2" align="center">音<br>乐</p></div>		</div>
+	<audio id="player">
+        <source src="yinpin/msawh.mp3"></source>
+    </audio>
+	<div id="d12">	<div id="yinyue1"><p id="yinyue2" align="center">音<br>频</p></div></div>
 	<div id="d11"></div>
 	
 </div>
@@ -182,7 +192,7 @@ function tip(ev){
 <div id="d21">
 </div>
 <div id="d22">
-<p class="wenzi">梅山文化作为一种原始渔猎文化，浸透了原始巫术的因子。古代的梅山人和今天的梅山巫术承传者们，在进山狩猎前要举行“安梅山”的原始巫术仪式。所谓“安梅山”，即给“梅山神”设坛并举行祭祀。安“梅山”要用“三”块石头或“三”块瓦片架在猪、牛踏不到的僻静地方，或安在“三”岔路口的古树下，表示梅山神在此；土家人安梅山大都选在屋角右侧空坪中的隐蔽洁净处，用岩石砌“三”面墙，上盖一块岩板，前面空着为门。——传说这样做了，野兽就会“迷”路，总是在山里转来转去，不会逃走。</p>
+<p class="wenzi">&nbsp;&nbsp;&nbsp;&nbsp;梅山文化作为一种原始渔猎文化，浸透了原始巫术的因子。古代的梅山人和今天的梅山巫术承传者们，在进山狩猎前要举行“安梅山”的原始巫术仪式。所谓“安梅山”，即给“梅山神”设坛并举行祭祀。安“梅山”要用“三”块石头或“三”块瓦片架在猪、牛踏不到的僻静地方，或安在“三”岔路口的古树下，表示梅山神在此；土家人安梅山大都选在屋角右侧空坪中的隐蔽洁净处，用岩石砌“三”面墙，上盖一块岩板，前面空着为门。——传说这样做了，野兽就会“迷”路，总是在山里转来转去，不会逃走。</p>
 </div>
 <div id="d23">
 </div>
@@ -195,10 +205,16 @@ function tip(ev){
 </div>
 <div id="d4">
   <div ondrop="drop(event)" ondragover="allowDrop(event)" class="tree"></div>
+	<div id="d5"><p class="wenzi">点击石块试试吧</p></div>
 	<img id="stone1" class="shitou" src="images/shitou1.png" height="95" draggable="true" ondragstart="drag(event)"  onclick="tip();" style="CURSOR: hand">
 	<img id="stone2"class="shitou" src="images/shitou2.png" height="95" draggable="true" ondragstart="drag(event)" onclick="tip();" style="CURSOR: hand">
 	<img id="stone3" class="shitou" src="images/shitou3.png" height="95" draggable="true" ondragstart="drag(event)" onclick="tip();" style="CURSOR: hand">
 </div>
 </div>
 </body>
+<script type="text/javascript">
+    document.getElementById('yinyue2').onclick = function(){
+        player.play();
+    }
+</script>
 </html>

@@ -47,7 +47,7 @@
 	color: #000;
 	left: 0px;
 	}
-.music{
+#music{
 	position: absolute;
 	top: 0px;
 	right: 3px;
@@ -123,7 +123,10 @@ a{ color: #090707; text-decoration: none;}
 		</div>
 		<div class = 'back'>
 		  <div class = 'previous'><p class="p3"><a href="index.html">返回</a></p></div>
-			<div class = 'music'><p class="p3">音乐</p></div>
+			<audio id="player">
+       		 	<source src="yinpin/chunyinyue.mp3"></source>
+   			 </audio>
+			<div id= 'music'><p class="p3">音乐</p></div>
 	  </div>
   </div>
 	<div class = 'rightbar'>
@@ -133,4 +136,9 @@ a{ color: #090707; text-decoration: none;}
   </div>
 </div>
 </body>
+<script type="text/javascript">
+    document.getElementById('music').onclick = function(){
+        player.play();
+    }
+</script>
 </html>

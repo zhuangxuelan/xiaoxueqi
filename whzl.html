@@ -12,6 +12,10 @@
 	margin-left: auto;
 	background-image:url(images/5.png);
 }
+#whjj{
+	height: 165px;
+	width: 980px;	
+	}
 #d2 {
 	background-image:url(images/1.jpg);
 	background-size: auto 165px;
@@ -20,6 +24,7 @@
 	position: relative;
 	left: 50px;
 	top: 25px;
+	float: left;
 }
 .c1 {
 	font-family: 隶书;
@@ -68,9 +73,10 @@
 	width: 100px;}
 #yinyue1 {
 	background-image:url(images/6.png);
-	position: absolute;
-	left: 700px;
-	top: 50px;
+	position: relative;
+	float: left;
+	left: 200px;
+	top:30px;
 	height: 150px;
 	width: 150px;
 	background-size: auto 150px;
@@ -94,11 +100,22 @@ a{text-decoration: none;
 
 <body>
 <div id="d1">
-<div id="d2"><p class="c1" align="center"><a href="wwjj.html" class="fd">文化简介</a></p></div>
+<div id="whjj">
+	<div id="d2"><p class="c1" align="center"><a href="wwjj.html" class="fd">文化简介</a></p></div>
+	<audio id="player">
+        <source src="yinpin/chunyinyue.mp3"></source>
+    </audio>
+	<div id="yinyue1"><p id="yinyue2" align="center">音<br>乐</p></div>
+</div>
 <div id="d3"><p class="c1" align="center"><a href="yynh.html" class="fd">渊源内涵</a></p></div>
 	<div id="d4"><p class="c1" align="center"><a href="mswwh.html" class="fd">梅山“巫”文化</a></p></div>
 <div id="fanhui1"><p id="fanhui2" align="center"><a href="index.html" class="c2">返回</a></p></div>
-<div id="yinyue1"><p id="yinyue2" align="center">音<br>乐</p></div>
+
 </div>
 </body>
+<script type="text/javascript">
+    document.getElementById('yinyue2').onclick = function(){
+        player.play();
+    }
+</script>
 </html>

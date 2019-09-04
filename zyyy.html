@@ -36,7 +36,8 @@
 
 }
 #d3 {
-	height: 500px;
+	background-color: #FFFFFF;
+	height: 480px;
 	width: 450px;
 	float: right;
 }
@@ -83,15 +84,23 @@ a{
 <div id="d1">
 <div id="d5">
 	<div id="d2"></div>
-	<div id="d3"><p class="wenzi">“梅山初民的这种原始思维互渗观念，不是一种孤立的文化现象。梅山文化作为一种原始渔猎文化，从经济形态看，整个狩猎分配过程具有鲜明的原始共产主义色彩；从原始宗教崇拜看，很多原始宗教礼仪保留著明显的原始生殖崇拜内容，因此，在其巫术活动中出现原始思维互渗观念，是很自然的。</p>
-	<p class="wenzi">至此，就梅山文化的本质意义而言，我们似乎可以得出这样的认识：原初的梅山文化，是一种以原始数觉极限数——“三”为媒介，借助“三”的“迷惑”力量，通过想像的原始思维互渗关系迷惑对象来开展渔猎活动的原始巫文化。她应产生于中国原始人类的“数觉时期”，是形成中国哲学“一生二，二生三，三生万物”观念的文化源头。而所谓“梅山”，其真实含义应为“媒三”（梅山腹地新化方言“山”即读为“三”）；所谓“梅山文化”，其实也就是“媒三文化”。——“梅山”，当为后来的梅山文化圈以外的儒生们记音之误。</p>
+	<div id="d3"><p class="wenzi">&nbsp;&nbsp;&nbsp;&nbsp;梅山初民的这种原始思维互渗观念，不是一种孤立的文化现象。梅山文化作为一种原始渔猎文化，从经济形态看，整个狩猎分配过程具有鲜明的原始共产主义色彩；从原始宗教崇拜看，很多原始宗教礼仪保留著明显的原始生殖崇拜内容，因此，在其巫术活动中出现原始思维互渗观念，是很自然的。</p>
+	<p class="wenzi">&nbsp;&nbsp;&nbsp;&nbsp;至此，就梅山文化的本质意义而言，我们似乎可以得出这样的认识：原初的梅山文化，是一种以原始数觉极限数——“三”为媒介，借助“三”的“迷惑”力量，通过想像的原始思维互渗关系迷惑对象来开展渔猎活动的原始巫文化。她应产生于中国原始人类的“数觉时期”，是形成中国哲学“一生二，二生三，三生万物”观念的文化源头。而所谓“梅山”，其真实含义应为“媒三”（梅山腹地新化方言“山”即读为“三”）；所谓“梅山文化”，其实也就是“媒三文化”。——“梅山”，当为后来的梅山文化圈以外的儒生们记音之误。</p>
 	<p class="wenzi"></p></div>
 </div>
 	
 <div id="d6">
 	<div id="fanhui1"><p id="fanhui2" align="center"><a href="mswwh.html" class="c2">返回</a></p></div>
-	<div id="yinyue1"><p id="yinyue2" align="center">音<br>乐</p></div>
+	<audio id="player">
+        <source src="yinpin/mswwhzyyy.mp3"></source>
+    </audio>
+	<div id="yinyue1"><p id="yinyue2" align="center">音<br>频</p></div>
 </div>
 </div>
 </body>
+<script type="text/javascript">
+    document.getElementById('yinyue2').onclick = function(){
+        player.play();
+    }
+</script>
 </html>

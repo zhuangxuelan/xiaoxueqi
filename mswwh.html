@@ -30,7 +30,7 @@
 	color: #000;
 	left: 0px;
 	}
-.music{
+#music{
 	position: relative;
 	float: left;
 	top: 0px;
@@ -115,7 +115,10 @@ a{ color: #090707; text-decoration: none;}
 <body>
 <div id = "div1">
 	<div class = "top">
-		<div class = "music"><p class="p3">音乐</p></div>
+	<audio id="player">
+        <source src="yinpin/chunyinyue.mp3"></source>
+    </audio>
+		<div id= "music"><p class="p3">音乐</p></div>
 	</div>
 	<div id="zhongjian">
 		<div id="d1"><p><a href="gnnh.html" class="fd">概念内涵</a></p></div>
@@ -128,4 +131,9 @@ a{ color: #090707; text-decoration: none;}
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+    document.getElementById('music').onclick = function(){
+        player.play();
+    }
+</script>
 </html>
